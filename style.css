@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(180, 255, 180), rgb(154, 215, 250));
+    color: maroon;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    transition: all 0.4s ease-in;
+
+}
+
+form button {
+    color: rgb(154, 215, 250);
+    background: whitesmoke;
+    cursor: pointer;
+    /* transition: all 0.3s ease-in; */
+}
+
+form button:hover {
+    color: whitesmoke;
+    background: rgb(154, 215, 250);
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.check-btn, .delete-btn {
+    background: whitesmoke;
+    color: red;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.todo-item {
+    padding: 0 1rem;
+}
+
+.check-btn {
+    color: seagreen;
+    font-size: 1.8rem;
+}
+
+.fa-check, .fa-trash-alt {
+    pointer-events: none;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+
+  
+  /* Custom dropdown menu */
+ 
+  .drop-btn {
+    background-color: whitesmoke;
+    color: rgb(154, 215, 250);
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+  .dropdown {
+     background-color: whitesmoke;
+     color: rgb(154, 215, 250);
+     position: relative;
+     display: inline-block;
+     margin: 1rem;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: whitesmoke;
+     min-width: 6.8rem;
+     box-shadow: none;
+     z-index: 1;
+ }
+
+ .dropdown-content a {
+     color: rgb(154, 215, 250);
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+ }
+
+ .dropdown-content a:hover {
+     background-color: rgb(154, 215, 250);
+     color: whitesmoke;
+     transition: all 0.4s ease-in;
+
+ }
+
+ .dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+ }
+
+ .dropdown:hover .drop-btn {
+     background-color: rgb(154, 215, 250);
+     color: whitesmoke;
+ }
